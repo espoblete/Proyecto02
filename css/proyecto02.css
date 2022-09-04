@@ -1,0 +1,28 @@
+.navdiv{
+    background-color: black;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    text-transform: uppercase;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.navp1{
+    padding-right: 100px;
+}
+
+.maindiv1{
+    background-image: url(/img/fondoGymYFoto.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    
+}
+.maindiv2{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: underline;
+    padding-top: 200px;
+    padding-left: 50px;
+}
