@@ -8,6 +8,7 @@
     flex-wrap: wrap;
 
 }
+
 .navp1{
     padding-right: 100px;
 }
@@ -19,10 +20,23 @@
     min-height: 100vh;
     
 }
-.maindiv2{
+.mainh1{
     color: white;
     text-transform: uppercase;
-    text-decoration: underline;
-    padding-top: 200px;
+    
+    padding-top: 50px;
     padding-left: 50px;
+}
+
+.maindiv2{
+    color: white;
+    size: 40px;
+    margin-left: 50px;
+}
+
+#registro{
+    background-color: #2E2926;
+    color: white ;
+    margin-left: 50px;
+    margin-right: 70%;
 }

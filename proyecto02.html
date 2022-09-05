@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,27 +9,43 @@
     <link rel="shortcut icon" href="./img/dumbbell-solid.png" type="image/x-icon">
     <title>Gym One More Rep</title>
 </head>
+
 <body>
     <nav>
         <div class="navdiv">
-            <img src="./img/LogoGym.png" alt="">
-            <p class="navp">Inicio</p>
-            <p class="navp">Ingresa</p>
+            <img src="./img/LogoGym.png" alt="logo">
+            <p class="navp">Ingresa los datos de tus ejercicios</p>            
             <p class="navp1">Contacto</p>
         </div>
     </nav>
     <main>
         <div class="maindiv1">
-            <div class="maindiv2">
+            <h2 class="mainh1">
                 Información del Socio
-            </div>
+            </h2>
+            <form action="">
+                <div class="maindiv2">
+                    <p><label for="nombre">Nombre: </label><input id="nombre" type="text"></p>
+                    <p><label for="apellido">Apellido: </label><input id="apellido" type="text"></p>
+                    <p><label for="edad">Edad: </label><input id="edad" type="number"></p>
+                    <p><label for="email">Email: </label><input id="email" type="text"></p>
+                    <p><label for="ejercicio">Ejercicio: </label><input id="ejercicio" type="text"></p>
+                    <p><label for="repeticiones">Repeticiones: </label><input id="repeticiones" type="number"></p>
+                    <p><label for="series">Series: </label><input id="series" type="number"></p>
+                    <button id="pinchame" type="button" onclick="javascript: pinchame()">Pinchame</button>
+                    <button id="registrar" type="button">Registrar</button>
+                </div>
+            </form>
+            <div id="registro">
 
+            </div>
         </div>
-        
+       
     </main>
 
 
     <script src="./js/proyecto02.js"></script>
     <script src="https://kit.fontawesome.com/974d0a103b.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
