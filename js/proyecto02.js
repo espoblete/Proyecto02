@@ -1,26 +1,28 @@
-const btn_reg = document.querySelector ('#registrar')
-btn_reg.addEventListener ('click', event => crear())
+function capturar() {
+    function Socio(nombre, apellido, edad, email, ejercicio, repeticiones, series) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.edad = edad;
+        this.email = email;
+        this.ejercicio = ejercicio;
+        this.repeticiones = repeticiones;
+        this.series = series;
+    }
+    var nombreCapturar = document.getElementById("nombre").value;
+    var apellidoCapturar = document.getElementById("apellido").value;
+    var edadCapturar = document.getElementById("edad").value;
+    var emailCapturar = document.getElementById("email").value;
+    var ejercicioCapturar = document.getElementById("ejercicio").value;
+    var repeticionesCapturar = document.getElementById("repeticiones").value;
+    var seriesCapturar = document.getElementById("series").value;
+    nuevoSocio = new Socio(nombreCapturar, apellidoCapturar, edadCapturar, emailCapturar, ejercicioCapturar, repeticionesCapturar, seriesCapturar);
+    console.log(nuevoSocio)
+    agregar();
+}
+var baseDatos = [];
+function agregar() {
+    baseDatos.push(nuevoSocio);
+    console.log(baseDatos);
+    document.getElementById("registros").innerHTML += `Nombre: ${nuevoSocio.nombre}/ Apellido: ${nuevoSocio.apellido}/ Edad: ${nuevoSocio.edad}/ Email: ${nuevoSocio.email}/ Nombre del Ejercicio: ${nuevoSocio.ejercicio}/ N° de Repeticiones: ${nuevoSocio.repeticiones}/ N° de Series: ${nuevoSocio.series}.`;
 
-
-function crear(){    
-    const inputNombre = document.getElementById ('nombre')    
-    const valor = document.createTextNode (inputNombre.value + ' : nombre / ')
-    const etiqueta = document.createElement ('p')
-    etiqueta.appendChild (valor)    
-    const registro = document.getElementById ('registro')
-    registro.appendChild(etiqueta)
-
-    const inputApellido = document.getElementById ('apellido')    
-    const valorApellido = document.createTextNode(inputApellido.value + ' : apellido / ')
-    const etiquetaApellido = document.createElement ('p')
-    etiqueta.appendChild (valorApellido)    
-    const registroApellido = document.getElementById ('registro')
-    registro.appendChild(etiquetaApellido)
-    
-    const inputEdad = document.getElementById ('edad')    
-    const valorEdad = document.createTextNode(inputEdad.value + ' : edad / ')
-    const etiquetaEdad = document.createElement ('p')
-    etiqueta.appendChild (valorEdad)    
-    const registroEdad = document.getElementById ('registro')
-    registro.appendChild(etiquetaEdad)
 }
