@@ -40,3 +40,13 @@
     margin-left: 50px;
     margin-right: 20%;
 }
+#tabla{
+    background-color: #2e292687;
+    color: white;
+    margin-left: 50px;
+    margin-right: 20%;
+    margin-top: 20px;
+}
+.ttitulo{
+    font-size: 20px;
+}

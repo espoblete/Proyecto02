@@ -23,6 +23,19 @@ var baseDatos = [];
 function agregar() {
     baseDatos.push(nuevoSocio);
     console.log(baseDatos);
-    document.getElementById("registros").innerHTML += `Nombre: ${nuevoSocio.nombre}/ Apellido: ${nuevoSocio.apellido}/ Edad: ${nuevoSocio.edad}/ Email: ${nuevoSocio.email}/ Nombre del Ejercicio: ${nuevoSocio.ejercicio}/ N° de Repeticiones: ${nuevoSocio.repeticiones}/ N° de Series: ${nuevoSocio.series}.`;
-
+    document.getElementById("tabla").innerHTML += `<tbody><td>${nuevoSocio.nombre}</td><td>${nuevoSocio.apellido}</td><td>${nuevoSocio.edad}</td><td>${nuevoSocio.email}</td><td>${nuevoSocio.ejercicio}</td><td>${nuevoSocio.repeticiones}</td><td>${nuevoSocio.series}</td><td <i onClick="editar" class="fas fa-edit"</i></td><td <i onClick="borrar" class="fas fa-trash-alt"></i></td></tbody>`;
+    guardaDatos();
 }
+function guardaDatos(key, value) {
+    const miStorage = localStorage;
+    miStorage.setItem("nombre", nombre.value);
+    miStorage.setItem("apellido", apellido.value);
+    miStorage.setItem("edad", edad.value);
+    miStorage.setItem("email", email.value);
+    miStorage.setItem("ejercicio", ejercicio.value);
+    miStorage.setItem("repeticiones", repeticiones.value);
+    miStorage.setItem("series", series.value);
+    console.log(miStorage);
+}
+
+
