@@ -1,4 +1,4 @@
-.navdiv{
+.navdiv {
     background-color: black;
     display: flex;
     color: white;
@@ -6,47 +6,47 @@
     text-transform: uppercase;
     align-items: center;
     flex-wrap: wrap;
-
 }
 
-.navp1{
+.navp1 {
     padding-right: 100px;
 }
 
-.maindiv1{
+.maindiv1 {
     background-image: url(/img/fondoGymYFoto.png);
     background-size: cover;
     background-position: center;
     min-height: 100vh;
-    
-}
-.mainh1{
-    color: white;
-    text-transform: uppercase;
-    
-    padding-top: 50px;
-    padding-left: 50px;
 }
 
-.maindiv2{
+.maindiv2 {
     color: white;
     size: 40px;
     margin-left: 50px;
 }
 
-#registros{
-    background-color: #2e292687;
-    color: white ;
-    margin-left: 50px;
-    margin-right: 20%;
-}
-#tabla{
-    background-color: #2e292687;
+.marco {
+    background-color: #2e29263a;
     color: white;
     margin-left: 50px;
-    margin-right: 20%;
-    margin-top: 20px;
+    margin-right: 60%;
 }
-.ttitulo{
-    font-size: 20px;
+
+#mensajito {
+    color: white;
+    font-weight: 800;
+    padding-top: 20px;
+    margin-left: 70px;
+}
+
+#actualizar{
+    display: none;
+}
+
+article{
+    display: flex;    
+}
+
+article p{
+    margin: 0 20px;
 }

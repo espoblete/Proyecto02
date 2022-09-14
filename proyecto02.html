@@ -2,70 +2,57 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/proyecto02.css">
-    <link rel="shortcut icon" href="./img/dumbbell-solid.png" type="image/x-icon">
-    <title>Gym One More Rep</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/proyecto02.css">
+  <link rel="shortcut icon" href="./img/dumbbell-solid.png" type="image/pesa-icono">
+  <title>Gym One More Rep</title>
 </head>
 
 <body>
-    <nav>
-        <div class="navdiv">
-            <img src="./img/LogoGym.png" alt="logo">
-            <p class="navp">Ingresa los datos de tus ejercicios</p>            
-            <p class="navp1">Contacto</p>
+  <nav>
+    <div class="navdiv">
+      <img src="./img/LogoGym.png" alt="logo">
+      <p class="navp">Ingresa los datos de tus ejercicios</p>
+      <p class="navp1">Contacto</p>
+    </div>
+  </nav>
+  <main>
+    <section class="maindiv1">
+      <fieldset class="marco">
+        <legend>
+          <h2>Ingresa recordatorios</h2>
+        </legend>
+        <form id="form">
+          <p><input type="text" id="socio" name="socio" placeholder="Socio"></p>
+          <p><input type="text" id="ejercicio" name="ejercicio" placeholder="Ejercicio"></p>
+          <p><input type="number" id="rep" name="rep" placeholder="Repeticiones"></p>
+          <p><input type="number" id="series" name="series" placeholder="Series"></p>
+          <p><button id="agregar">Agregar Recordatorio</button></p>
+          <p><button id="actualizar">Actualizar</button></p>
+        </form>
+      </fieldset>
+
+      <div id="mensajito"></div>
+
+
+      <fieldset class="marco">
+        <legend>
+          <h2>Recordatorio de Ejercicios</h2>
+        </legend>
+        <div id="recordatorios">
         </div>
-    </nav>
-    <main>
-        <div class="maindiv1">
-            <h2 class="mainh1">
-                Información del Socio
-            </h2>
-            <form action="">
-                <div class="maindiv2">
-                    <p><input id="nombre" placeholder="Ingresa tu nombre" size="20" type="text"></p>
-                    <p><input id="apellido" placeholder="Ingresa tu apellido" size="20" type="text"></p>
-                    <p><input id="edad" placeholder="Ingresa tu edad" type="number"></p>
-                    <p><input id="email" placeholder="Ingresa tu email" size="20" type="text"></p>
-                    <p><input id="ejercicio" placeholder="Ingresa nombre de ejercicio" size="20" type="text"></p>
-                    <p><input id="repeticiones" placeholder="Ingresa n° de repeticiones" type="number"></p>
-                    <p><input id="series" placeholder="Ingresa n° de series" type="number"></p>
-                    
-                    <button id="ingresa" type="button" onclick="capturar();">ingresa datos</button>
-                    <!-- <button id="edita" type="button" onclick="editar();">edita datos </button> -->
-                    <!-- <button id="borrar" type="button" onclick="borrar();">borrar datos</button> -->
+      </fieldset>
+    </section>
 
-                    
-                </div>
-            </form>
-            
-            <table id="tabla">
-                <thead>
-                    <tr class="ttitulo">
-                        <th>Nombre </th>
-                        <th>Apellido </th>
-                        <th>Edad </th>
-                        <th>Email </th>
-                        <th>Ejercicio </th>
-                        <th>Repeticiones </th>
-                        <th>Series </th>
-                        
-                        
-                        
-                        
-                    </tr>
-                </thead>
-                
-            </table>
-        </div>
-       
-    </main>
+  </main>
 
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="sweetalert2.all.min.js"></script>
+  <script src="./js/proyecto02.js"></script>
+  <script src="https://kit.fontawesome.com/974d0a103b.js" crossorigin="anonymous"></script>
 
-    <script src="./js/proyecto02.js"></script>
-    <script src="https://kit.fontawesome.com/974d0a103b.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
