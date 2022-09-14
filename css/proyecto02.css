@@ -39,14 +39,24 @@
     margin-left: 70px;
 }
 
+#mensajito2 {
+    display: none;
+    color: red;
+    font-weight: 800;
+    padding-top: 20px;
+    margin-left: 70px;
+}
+
 #actualizar{
     display: none;
 }
 
 article{
-    display: flex;    
+    display: flex; 
+    justify-content: space-between;   
 }
 
 article p{
     margin: 0 20px;
 }
+
